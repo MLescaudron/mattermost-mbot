@@ -10,6 +10,7 @@
   - Create a directory like "mattermods" and a subdirectory if you want "mbot"
   - Download index.php and move it on mbot directory
   - You need a read/write access on the directory (because of words.json generate and update)
+  
 ##### Configuration
 - Under index.php you can change bot username, bot icon and add token channels
 - Create outgoing webhook for each channel like this params :
