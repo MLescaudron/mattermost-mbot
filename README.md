@@ -11,7 +11,7 @@
   - Download index.php and move it on mbot directory
   - You need a read/write access on the directory (because of words.json generate and update)
   
-##### Configuration
+#### Configuration
 - Under index.php you can change bot username, bot icon and add token channels
 - Create outgoing webhook for each channel like this params :
      ![alt picture](https://i.gyazo.com/88f2a3f5fba86c6e030ca2a5d3c090af.png)
