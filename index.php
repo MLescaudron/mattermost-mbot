@@ -269,7 +269,6 @@ if ($_POST && array_key_exists('responses', $_POST)) {
             border-radius: 0px;
             resize: none;
             min-height: 95px;
-            white-space: nowrap;
         }
 
         .remove {
@@ -336,10 +335,17 @@ if ($_POST && array_key_exists('responses', $_POST)) {
         $('#add-row').on('click', function () {
             $('tbody').append(
                 '<tr>' +
-                '<td><textarea class="form-control" placeholder="One per line"></textarea></td>' +
-                '<td><textarea class="form-control" placeholder="One per line (random choice)"></textarea>' +
+                '<td><textarea class="form-control" placeholder="One per line" wrap="off"></textarea></td>' +
+                '<td><textarea class="form-control" placeholder="One per line (random choice)" wrap="off"></textarea>' +
                 '<button class="remove"><i class="fa fa-trash" aria-hidden="true"></i></button></td>' +
                 '</tr>');
+        });
+
+        $(document).ready(function() {
+            $('textarea').each(function(){
+                $(this).attr('wrap', 'off');
+
+            });
         });
 
         // remove the selected row
