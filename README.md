@@ -15,6 +15,16 @@
 - Under index.php you can change bot username, bot icon and add token channels
 - Create outgoing webhook for each channel like this params :
      ![alt picture](https://i.gyazo.com/88f2a3f5fba86c6e030ca2a5d3c090af.png)
+- After creating the webhook, copy the generated token, and add it to the `$config` array, to the `token` key, in `index.php`. E.g.:
+
+```
+$config = [
+    'username' => 'B4o4T', // username display on chat
+    'icon_url' => 'https://les-404.xyz/img/B4o4T.png', // icon display on chat
+    'token' => [
+        'wx58em1ss3ya8gatdzddem9ada'
+    ] // Channels token
+```
 
 ### Add and edit messages/responses
 - Access on the index.php like : https://your-domain.com/mattermods/mbot
